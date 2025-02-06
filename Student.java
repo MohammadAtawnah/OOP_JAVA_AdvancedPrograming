@@ -26,4 +26,22 @@ public class Student {
         Balance-=aamount;
         return amount 
     }
+    public boolean check_Honer()
+    {
+        if(AVG>+=85.00)
+          return true;
+        else 
+        return fales;  
+    }
+    public double Calculate_AVG(double []Marks)
+    {
+        double total=0;
+        double AVG=0;
+        for(double mark :Marks)
+        {
+            total+=mark;
+        }
+        AVG=total/Marks.length;
+        return AVG;
+    }
 }
