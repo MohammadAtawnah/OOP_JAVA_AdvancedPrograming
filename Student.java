@@ -33,6 +33,7 @@ public class Student {
         else 
         return fales;  
     }
+
     public double Calculate_AVG(double []Marks)
     {
         double total=0;
@@ -43,5 +44,13 @@ public class Student {
         }
         AVG=total/Marks.length;
         return AVG;
+    }
+    private void Set_AVG(double []Marks)
+    {
+        this.AVG=Calculate_AVG(Marks);
+    }
+    public void show_AVG()
+    {
+        System.out.print("Your avrage is " + this.AVG);
     }
 }
